@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VocaTongue.Views.Mobile.MobileMenuPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#5A5856"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Resources>
+        <Color x:Key="VocaWhite">#F0F3EE</Color>
+        <Color x:Key="VocaPink">#F19996</Color>
+        <Color x:Key="VocaOrange">#F28D6A</Color>
+        <Color x:Key="VocaRed">#E77961</Color>
+        <Color x:Key="VocaGray">#5A5856</Color>
+    </ContentPage.Resources>
+
+    <Grid Margin="0,0,0,0" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.1*" />
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.6*" />
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.Row="0" Color="Transparent" />
+
+        <Grid Grid.Row="1"
+            HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="tongue.png" WidthRequest="64" HeightRequest="64" />
+
+            <Label 
+                    Grid.Column="1"
+                    Text="VocaTongue"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start" 
+                    FontFamily="BalooRegular"
+                    FontSize="48"
+                    LineHeight="64"
+                    TextColor="{StaticResource VocaWhite}"/>
+        </Grid>
+
+        <BoxView Grid.Row="2" Color="Transparent" />
+
+        <BoxView Grid.Row="3" Color="{StaticResource VocaRed}" CornerRadius="100,100,0,0" />
+    </Grid>
+</ContentPage>
