@@ -6,14 +6,6 @@
              BackgroundColor="#5A5856"
              Shell.NavBarIsVisible="False">
 
-    <ContentPage.Resources>
-        <Color x:Key="VocaWhite">#F0F3EE</Color>
-        <Color x:Key="VocaPink">#F19996</Color>
-        <Color x:Key="VocaOrange">#F28D6A</Color>
-        <Color x:Key="VocaRed">#E77961</Color>
-        <Color x:Key="VocaGray">#5A5856</Color>
-    </ContentPage.Resources>
-
     <Grid Margin="0,0,0,0" VerticalOptions="FillAndExpand">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.2*" />
@@ -78,6 +70,7 @@
 
                 <Button Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="3"
                         Text="Train" BackgroundColor="{StaticResource VocaPink}" 
+                        Clicked="OnTrainClicked"
                         CornerRadius="500"
                         Padding="16,0"
                         TextColor="{StaticResource VocaWhite}" 
@@ -94,6 +87,7 @@
 
                 <Button Grid.Row="3" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="1"
                         Text="Database" BackgroundColor="{StaticResource VocaPink}" 
+                        Clicked="OnDatabaseClicked"
                         CornerRadius="500"
                         Padding="12,0"
                         TextColor="{StaticResource VocaWhite}" 
@@ -110,6 +104,7 @@
 
                 <Button Grid.Row="5" Grid.Column="2" Grid.RowSpan="1" Grid.ColumnSpan="1"
                         Text="Settings" BackgroundColor="{StaticResource VocaPink}" 
+                        Clicked="OnSettingsClicked"
                         CornerRadius="500"
                         Padding="12,0"
                         TextColor="{StaticResource VocaWhite}" 
