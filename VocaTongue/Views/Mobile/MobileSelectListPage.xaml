@@ -44,7 +44,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" 
                 FontFamily="BalooRegular"
-                FontSize="40"
+                FontSize="32"
                 LineHeight="64"
                 TextColor="{StaticResource VocaWhite}"/>
 
@@ -64,10 +64,12 @@
             </BoxView>
 
             <StackLayout Margin="18" VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" >
-                <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand" 
+                <ScrollView x:Name="WordlistList" Orientation="Vertical" VerticalOptions="FillAndExpand" 
                             HorizontalScrollBarVisibility="Never"
-                            VerticalScrollBarVisibility="Default">
-                    <StackLayout x:Name="WordlistContainer" Orientation="Vertical" />
+                            VerticalScrollBarVisibility="Default"
+                            HorizontalOptions="FillAndExpand" >
+                    <StackLayout x:Name="WordlistContainer" Orientation="Vertical"
+                            HorizontalOptions="FillAndExpand" />
 
                 </ScrollView>
             </StackLayout>
