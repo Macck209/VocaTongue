@@ -8,6 +8,6 @@ public partial class MobilePlayPage : ContentPage
     }
     private async void OnBackClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new MobileSelectListPage());
+        await Navigation.PopAsync();
     }
 }
